@@ -9,22 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity" android:launchMode="standard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity" >
+        <activity android:name=".SecondActivity" android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="com.crayfish.action"/>
-                <action android:name="com.crayfish"/>
+                <action android:name="com.crayfish.action.a"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="com.crayfish.category"/>
                 <category android:name="com.crayfish.b"/>
             </intent-filter>
         </activity>
+        <activity android:name=".ThreeActivity" android:launchMode="singleTop"/>
+        <activity android:name=".FourActivity" android:launchMode="singleInstance"/>
     </application>
 
 </manifest>

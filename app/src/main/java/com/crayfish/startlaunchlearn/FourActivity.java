@@ -2,28 +2,26 @@ package com.crayfish.startlaunchlearn;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * ============================
  * 作    者：crayfish(徐杰)
- * 创建日期：2017/12/12.
+ * 创建日期：2017/12/13.
  * 描    述：
  * 修改历史：
  * ===========================
  */
 
-public class SecondActivity extends AppCompatActivity{
+public class FourActivity extends AppCompatActivity {
 
-    private static final String TAG = "SecondActivity";
+    private static final String TAG = "FourActivity";
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
@@ -51,5 +49,4 @@ public class SecondActivity extends AppCompatActivity{
         intent.putExtra("time",System.currentTimeMillis());
         startActivity(intent);
     }
-
 }
